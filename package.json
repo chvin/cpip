@@ -1,10 +1,10 @@
 {
   "name": "cpip",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Copy IP address",
   "main": "./bin/cpip",
   "bin": {
-    "cpip": "./bin/cpip"
+    "ip": "./bin/cpip"
   },
   "repository": {
     "type": "git",

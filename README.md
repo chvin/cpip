@@ -8,6 +8,6 @@ $ npm install cpip -g
 
 ## Use
 ```
-$ cpip
+$ ip
 ```
-![cpip](https://img.alicdn.com/tfs/TB1fDRFQpXXXXbIXpXXXXXXXXXX-384-120.gif)
+![ip](https://img.alicdn.com/tfs/TB1PA4LQpXXXXaAXpXXXXXXXXXX-386-162.gif)
