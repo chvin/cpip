@@ -1,6 +1,6 @@
 {
   "name": "cpip",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Copy IP address",
   "main": "./bin/cpip",
   "bin": {
