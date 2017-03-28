@@ -1,0 +1,27 @@
+{
+  "name": "cpip",
+  "version": "0.0.2",
+  "description": "Copy IP address",
+  "main": "./bin/cpip",
+  "bin": {
+    "cpip": "./bin/cpip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chvin/cpip.git"
+  },
+  "keywords": [
+    "copy",
+    "ip"
+  ],
+  "author": "Chvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chvin/cpip/issues"
+  },
+  "homepage": "https://github.com/chvin/cpip#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "copy-paste": "^1.3.0"
+  }
+}

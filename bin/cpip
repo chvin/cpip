@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+var os = require('os');
+var ncp = require('copy-paste');
+var chalk = require('chalk');
+
+var getIPAddress = function () {
+    var ifaces = os.networkInterfaces();
+    var ip = '';
+    for (var dev in ifaces) {
+        ifaces[dev].forEach(function (details) {
+            if (ip === '' && details.family === 'IPv4' && !details.internal) {
+                ip = details.address;
+                return;
+            }
+        });
+    }
+    return ip || "127.0.0.1";
+};
+var ip = getIPAddress();
+var msg = chalk.green('Your IP is ') + chalk.yellow(ip);
+
+ncp.copy(ip , function(){
+    msg = msg + chalk.green(' , has been copied to your clipboard.');
+    console.log(msg);
+}, function(){
+    msg = msg + chalk.green(' , copy to clipboard failed.');
+    console.log(msg);
+});
